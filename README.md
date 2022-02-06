@@ -1,10 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to my portfolio
 
-You can use the [editor on GitHub](https://github.com/JohanArisato/Johan.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Area of expertise** 
+1. Html
+2. CSS
+3. Javascript
+4. Python 
+5. C++
+6. C#
+7. Java
 
 ### Markdown
+```markdown
+[Link]() and [Image]()
+
+H e l l o T h e r e ~
+
+
+
+```
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
