@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jhoven Fernandez · GeoAI &amp; Urban Data Science</title>
-<meta name="description" content="Portfolio of Jhoven Fernandez, urban data scientist specializing in GeoAI for housing, land use and infrastructure.">
+<title>Johan (Jhoven) Fernandez · GeoAI &amp; Urban Data Science</title>
+<meta name="description" content="Portfolio of Johan (Jhoven) Fernandez, urban data scientist specializing in GeoAI for housing, land use and infrastructure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -47,6 +47,7 @@
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } .card { padding: 20px; } header { padding-top: 48px; } }
   .focus .card { padding: 18px 20px; }
+  .focus .card .eyebrow { margin-bottom: 4px; }
   .focus .card p { margin: 6px 0 0; color: var(--ink-2); font-size: 15px; }
   ul.exp { padding-left: 18px; color: var(--ink-2); }
   ul.exp li { margin-bottom: 8px; }
@@ -57,7 +58,7 @@
 <div class="wrap">
   <header>
     <div class="eyebrow">Urban data scientist · GeoAI</div>
-    <h1>Jhoven Fernandez</h1>
+    <h1>Johan (Jhoven) Fernandez</h1>
     <p class="lede">I build location-aware machine learning for housing, land use and infrastructure, helping planners see what is likely to happen on the ground, not just what is allowed on paper.</p>
     <div class="links">
       <a href="mailto:jhoven.jan98@gmail.com">jhoven.jan98@gmail.com</a>
@@ -110,6 +111,24 @@
       <a class="btn" href="https://github.com/JohanArisato/housing-site-realization">View code on GitHub</a>
     </div>
   </article>
+
+  <h2>More GeoAI for Cities projects</h2>
+  <article class="card" style="margin-bottom:14px">
+    <div class="eyebrow">Heat equity · Spatial statistics · Working paper</div>
+    <h3>Who gets the shade? Ranking New York neighborhoods for tree planting</h3>
+    <p>Across NYC's 42 health neighborhoods, tree canopy cools surfaces (−0.17 °F per point of canopy, R² 0.43), but heat illness follows poverty (r = 0.59), not surface heat (r = 0.20). The ranking rule is the policy: ranking by canopy gap puts 4 of the first 10 neighborhoods in the poorest third; an equity-weighted rule puts 9. A heat-illness model that looks useful on random tests fails when a whole borough is held out.</p>
+    <div class="tags"><span>PySAL</span><span>Moran's I &amp; LISA</span><span>Spatial lag &amp; error models</span><span>Leave-one-borough-out CV</span><span>Public data</span></div>
+    <div class="grid2">
+      <figure><img src="projects/who-gets-the-shade/03_ranking_rules.png" alt="Bar chart: poorest-third neighborhoods in the first 10 planted under five ranking rules" loading="lazy"><figcaption>The ranking rule decides who benefits first.</figcaption></figure>
+      <figure><img src="projects/who-gets-the-shade/04_maps.png" alt="Maps of heat illness and robust planting priorities in New York" loading="lazy"><figcaption>Heat illness and six robust planting priorities.</figcaption></figure>
+    </div>
+    <div class="btns"><a class="btn" href="https://github.com/JohanArisato/who-gets-the-shade">Code &amp; data</a></div>
+  </article>
+  <div class="grid2 focus">
+    <div class="card"><div class="eyebrow">Civic tech · PostGIS</div><b>CurbCall</b><p>A phone-first prototype where San Diego residents photograph broken sidewalks, potholes and dark streets, then vote on what each of seven areas should fix first. Research angle: whose problems get heard.</p><div class="tags"><span>PostGIS</span><span>Product design</span><span>Equity</span></div><p><a href="https://github.com/JohanArisato/curbcall">Repository →</a></p></div>
+    <div class="card"><div class="eyebrow">Research series</div><b>GeoAI for Cities</b><p>A website and article series: what GeoAI is, how cities measured themselves before machine learning, and who benefits when cities use spatial tools to decide.</p><div class="tags"><span>Writing</span><span>D3</span><span>Web mapping</span></div><p><a href="https://github.com/JohanArisato/geoai-for-cities">Repository →</a></p></div>
+    <div class="card"><div class="eyebrow">Data infrastructure</div><b>GeoAI Cities DB</b><p>One spatial database behind every project: San Diego neighborhoods, housing sites, CurbCall reports and NYC heat data, with a catalog that flags synthetic data and PostGIS views that join across projects.</p><div class="tags"><span>GeoPackage</span><span>PostGIS</span><span>SQL</span></div><p><a href="https://github.com/JohanArisato/geoai-cities-db">Repository →</a></p></div>
+  </div>
 
   <h2>Applied GIS projects</h2>
   <div class="grid2 focus">
