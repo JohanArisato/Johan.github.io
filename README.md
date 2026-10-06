@@ -1,4 +1,4 @@
-# Jhoven Fernandez · Portfolio
+# Johan Fernandez · Portfolio
 
 Source for my portfolio site: urban data science, spatial machine learning and GIS for planning.
 
