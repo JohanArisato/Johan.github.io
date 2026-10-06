@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jhoven Fernandez · Urban Data Science</title>
+<meta name="description" content="Portfolio of Jhoven Fernandez: spatial machine learning, predictive modeling and GIS for urban planning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f6f2; --surface: #ffffff; --ink: #14140f; --ink-2: #4d4c47; --muted: #7a7973;
+    --line: #e2e0d8; --accent: #1c5cab; --accent-soft: #e3eefb; --tag: #efede6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131311; --surface: #1c1c1a; --ink: #f4f3ee; --ink-2: #c3c2b7; --muted: #8f8e86;
+      --line: #2f2f2b; --accent: #6da7ec; --accent-soft: #1d2a3a; --tag: #2a2a26; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 Inter, system-ui, sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
+  .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 650; font-size: clamp(36px, 6vw, 56px); line-height: 1.05; margin: 12px 0 18px; }
+  .lede { font-size: 19px; color: var(--ink-2); max-width: 640px; margin: 0; }
+  .links { margin-top: 22px; display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 26px; margin: 56px 0 18px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  .card h3 { font-family: Fraunces, Georgia, serif; font-weight: 650; font-size: 24px; margin: 6px 0 10px; line-height: 1.2; }
+  .q { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; color: var(--ink-2); font-style: italic; margin: 16px 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 4px; }
+  .tags span { background: var(--tag); color: var(--ink-2); font-size: 12.5px; padding: 3px 9px; border-radius: 99px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 22px 0; }
+  .stat { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; }
+  .stat b { display: block; font-size: 24px; font-family: Fraunces, Georgia, serif; }
+  .stat small { color: var(--ink-2); font-size: 13px; }
+  figure { margin: 22px 0 0; }
+  figure img { width: 100%; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .note { font-size: 13.5px; color: var(--muted); margin-top: 14px; }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+  .btn { display: inline-block; padding: 9px 16px; border-radius: 8px; font-weight: 500; font-size: 14.5px; border: 1px solid var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--bg); }
+  .btn:hover { text-decoration: none; opacity: .9; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } .card { padding: 20px; } header { padding-top: 48px; } }
+  ul.exp { padding-left: 18px; color: var(--ink-2); }
+  ul.exp li { margin-bottom: 8px; }
+  footer { margin: 64px 0 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Urban data science · Spatial ML · Planning</div>
+    <h1>Jhoven Fernandez</h1>
+    <p class="lede">I build spatial models and GIS tools that help planners see what is likely to happen on the ground, not just what is allowed on paper.</p>
+    <div class="links">
+      <a href="mailto:jhoven.jan98@gmail.com">jhoven.jan98@gmail.com</a>
+      <a href="https://linkedin.com/in/jhoven-fernandez">LinkedIn</a>
+      <a href="https://github.com/JohanArisato">GitHub</a>
+    </div>
+  </header>
+
+  <h2>Featured research project</h2>
+  <article class="card">
+    <div class="eyebrow">Housing policy · Predictive modeling</div>
+    <h3>Will it get built? Predicting which Housing Element sites are realized</h3>
+    <p>California cities must show the state they have enough land zoned to meet their housing targets. San Diego's 2021–2029 Housing Element lists thousands of parcels as able to hold new homes, but listing a site does not mean anyone will build on it.</p>
+    <p class="q">Of the sites San Diego inventoried in 2021, which received housing approvals afterward, and can a spatially validated model predict that better than the inventory's own capacity assumptions?</p>
+    <p>The pipeline joins the City's sites inventory to development approvals, freezes features at the 2021 baseline to avoid look-ahead leakage, and validates on community plan areas the model has never seen. It produces calibrated site-level probabilities, a realistic-capacity estimate for each community, and an equity audit across state opportunity areas.</p>
+    <div class="tags"><span>Python</span><span>GeoPandas</span><span>scikit-learn</span><span>LightGBM</span><span>SHAP</span><span>Spatial cross-validation</span><span>Calibration</span><span>Folium</span></div>
+
+    <p class="note" style="margin-bottom:0">Pipeline test results on synthetic data:</p>
+    <div class="stats" style="margin-top:8px">
+      <div class="stat"><b>0.82 vs 0.74</b><small>ROC-AUC: model vs. capacity-only baseline</small></div>
+      <div class="stat"><b>35%</b><small>of claimed capacity expected to be realized</small></div>
+      <div class="stat"><b>28</b><small>leak-free features, 3 unit-tested rules</small></div>
+    </div>
+
+    <figure>
+      <img src="projects/housing-site-realization/figures/realistic_capacity.png" alt="Bar chart comparing claimed capacity with model-expected units for 15 community plan areas" loading="lazy">
+      <figcaption>Claimed vs. realistic capacity by community plan area.</figcaption>
+    </figure>
+    <div class="grid2">
+      <figure>
+        <img src="projects/housing-site-realization/figures/shap_summary.png" alt="SHAP summary of the drivers of predicted realization" loading="lazy">
+        <figcaption>What drives the prediction (SHAP).</figcaption>
+      </figure>
+      <figure>
+        <img src="projects/housing-site-realization/figures/equity_by_opportunity.png" alt="Observed and predicted realization rates by opportunity area" loading="lazy">
+        <figcaption>Accuracy and realization by opportunity area.</figcaption>
+      </figure>
+    </div>
+    <p class="note">Figures shown come from a synthetic sample that mirrors the City's data schemas, used to develop and test the pipeline. The repository includes scripts to download and run on the real public data.</p>
+    <div class="btns">
+      <a class="btn primary" href="projects/housing-site-realization/map.html">Open the interactive map</a>
+      <a class="btn" href="https://github.com/JohanArisato/housing-site-realization">View code on GitHub</a>
+    </div>
+  </article>
+
+  <h2>Selected experience</h2>
+  <ul class="exp">
+    <li><b>Action Research</b>, Project &amp; Program Associate (2024–2026). Geodatabases ranking Capital Improvement Plan sites for MS4/NPDES stormwater programs across four San Diego municipalities; Python and SQL automation; executive dashboards.</li>
+    <li><b>UC San Diego Facilities Management</b>, GIS Project Assistant (2023–2024). Georeferenced 1,788 AutoCAD drawings into an ArcGIS Pro basemap; drone orthomosaics and 3D models with Drone2Map.</li>
+    <li><b>American Academy of Pediatrics</b>, R&amp;D Intern (2023). Joined Census/ACS data with infrastructure layers to identify service-equity gaps.</li>
+    <li><b>UCSD Urban Expo, 3rd place</b>: research on ethical AI deployment in U.S. municipal operations.</li>
+  </ul>
+
+  <footer>B.A. Urban Studies &amp; Planning, UC San Diego · San Diego, California</footer>
+</div>
+</body>
+</html>
