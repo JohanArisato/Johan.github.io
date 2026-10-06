@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jhoven Fernandez · Urban Data Science</title>
-<meta name="description" content="Portfolio of Jhoven Fernandez: spatial machine learning, predictive modeling and GIS for urban planning.">
+<title>Jhoven Fernandez · GeoAI &amp; Urban Data Science</title>
+<meta name="description" content="Portfolio of Jhoven Fernandez, urban data scientist specializing in GeoAI for housing, land use and infrastructure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -46,6 +46,8 @@
   .btn:hover { text-decoration: none; opacity: .9; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } .card { padding: 20px; } header { padding-top: 48px; } }
+  .focus .card { padding: 18px 20px; }
+  .focus .card p { margin: 6px 0 0; color: var(--ink-2); font-size: 15px; }
   ul.exp { padding-left: 18px; color: var(--ink-2); }
   ul.exp li { margin-bottom: 8px; }
   footer { margin: 64px 0 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
@@ -54,15 +56,23 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="eyebrow">Urban data science · Spatial ML · Planning</div>
+    <div class="eyebrow">Urban data scientist · GeoAI</div>
     <h1>Jhoven Fernandez</h1>
-    <p class="lede">I build spatial models and GIS tools that help planners see what is likely to happen on the ground, not just what is allowed on paper.</p>
+    <p class="lede">I build location-aware machine learning for housing, land use and infrastructure, helping planners see what is likely to happen on the ground, not just what is allowed on paper.</p>
     <div class="links">
       <a href="mailto:jhoven.jan98@gmail.com">jhoven.jan98@gmail.com</a>
       <a href="https://linkedin.com/in/jhoven-fernandez">LinkedIn</a>
       <a href="https://github.com/JohanArisato">GitHub</a>
     </div>
   </header>
+
+  <h2>Research focus</h2>
+  <div class="grid2 focus">
+    <div class="card"><b>GeoAI for housing policy</b><p>Predicting where zoned capacity actually becomes housing, and auditing those predictions for equity.</p></div>
+    <div class="card"><b>Spatially honest ML</b><p>Spatial cross-validation, calibration and explainable AI so models hold up in neighborhoods they have never seen.</p></div>
+    <div class="card"><b>Remote sensing &amp; drones</b><p>Orthomosaics, 3D models and imagery for campus and city planning.</p></div>
+    <div class="card"><b>Responsible AI in cities</b><p>Transparency and governance for AI used in municipal decisions.</p></div>
+  </div>
 
   <h2>Featured research project</h2>
   <article class="card">
@@ -100,6 +110,14 @@
       <a class="btn" href="https://github.com/JohanArisato/housing-site-realization">View code on GitHub</a>
     </div>
   </article>
+
+  <h2>Applied GIS projects</h2>
+  <div class="grid2 focus">
+    <div class="card"><b>Municipal stormwater priority mapping</b><p>Geodatabases ranking Capital Improvement Plan sites across four San Diego cities under MS4/NPDES permits.</p><div class="tags"><span>ArcGIS Pro</span><span>Python</span><span>Power BI</span></div></div>
+    <div class="card"><b>UCSD campus CAD-to-GIS &amp; UAV mapping</b><p>Georeferenced 1,788 AutoCAD drawings into an ArcGIS Pro basemap; drone orthomosaics and 3D models.</p><div class="tags"><span>Drone2Map</span><span>Georeferencing</span></div></div>
+    <div class="card"><b>Community health equity mapping</b><p>Census/ACS data joined with infrastructure layers to find service gaps in underserved neighborhoods.</p><div class="tags"><span>Spatial joins</span><span>Census ACS</span></div></div>
+    <div class="card"><b>Wildfire &amp; erosion landscape analysis</b><p>Slope, vegetation and BMP overlays for hazard-resilient planning in Southern California.</p><div class="tags"><span>Hazard mitigation</span><span>ArcGIS Pro</span></div></div>
+  </div>
 
   <h2>Selected experience</h2>
   <ul class="exp">
